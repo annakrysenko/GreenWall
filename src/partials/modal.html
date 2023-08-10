@@ -1,0 +1,75 @@
+<div class="backdrop is-hidden">
+  <div class="modal">
+    <div class="form-wrap wrap-modal">
+      <svg class="icon icon-cross" id="close" width="32" height="32">
+        <use xlink:href="#icon-cross"> </use>
+      </svg>
+      <h2 class="form-title title-modal">
+        Sign Up the form to get
+        <span class="accent-text">a free consultation</span> with our manager
+      </h2>
+      <form id="form" class="form form-modal">
+        <label for="formName" class="label"
+          >Full Name:
+          <input
+            type="text"
+            id="formName"
+            name="formName"
+            value=""
+            class=""
+            required
+          />
+        </label>
+        <label for="formEmail" class="label"
+          >Email:
+          <input
+            type="email"
+            id="formEmail"
+            name="formEmail"
+            value=""
+            class=""
+            required
+          />
+        </label>
+        <label for="formPhone" class="label">
+          Phone number:
+          <input
+            type="tel"
+            id="formPhone"
+            name="formPhone"
+            value=""
+            class=""
+            required
+          />
+        </label>
+        <label for="formAddress" class="label"
+          >Address:
+          <input
+            type="text"
+            id="formAddress"
+            name="formAddress"
+            value=""
+            class=""
+            required
+          />
+        </label>
+
+        <div class="custom-dropdown">
+          <input class="dropdown-toggle-modal"  name='inputServices' id="inputServices" placeholder="Choose a service" required></input>
+          <div class="dropdown-content-modal is-hidden">
+            <div class="dropdown-item" data-local="modal">Bookkeeping</div>
+            <div class="dropdown-item" data-local="modal">Payroll</div>
+            <div class="dropdown-item" data-local="modal">Financial analysis</div>
+            <div class="dropdown-item" data-local="modal">Tax preparation</div>
+            <div class="dropdown-item" data-local="modal">Legal services</div>
+            <div class="dropdown-item" data-local="modal">Company Formation</div>
+          </div>
+        </div>
+
+        <button type="submit" class="submit form-submit">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- icon -->

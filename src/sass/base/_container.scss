@@ -1,0 +1,29 @@
+@import "../utils/breakpoints";
+
+.container {
+    @media screen and (max-width: 375.98px) {
+        max-width: 100vw;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width: $mobile) {
+        margin: 0 auto;
+        padding: 16px 16px;
+        width: $mobile;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+        padding: 16px 40px;
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+        // width: 100%;
+        padding: 16px 40px;
+        margin: 0 auto;
+    }
+}

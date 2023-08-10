@@ -1,0 +1,106 @@
+.aboutUs-Wrap {
+    width: 100vw;
+    height: 100vh;
+    // background-color: rgb(189, 188, 188);
+    background: linear-gradient(180deg, rgba(97, 97, 97, 0.543) 20%, rgba(255, 255, 255, 0) 100%);
+    // color: rgb(0, 0, 0);
+    // background-image: url('../images/aboutUs.jpg');
+    // background-repeat: no-repeat;
+    // background-size: 150%;
+    // background-position-x: -100px;
+    // background-position-y: -500px;
+    display: flex;
+    flex-direction: column;
+}
+
+// advantages section
+.advantages-wrap {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 20px;
+}
+
+.advantages-title {
+    margin-top: 30px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f6f6f6;
+    text-align: center;
+}
+
+.advantages-list {
+    display: flex;
+    gap: 20px;
+    font-size: medium;
+}
+
+.advantages-list__item {
+    width: calc(100% / 4);
+    height: 70px;
+    font-size: 0.7rem;
+    text-align: center;
+    color: #f6f6f6;
+    background-color: rgba(7, 40, 9, 0.382); /* Цвет оверлея */
+
+    padding: 15px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icon {
+    display: inline-block;
+    width: 100%;
+    //   background-color: $background-color;
+    height: 2em;
+    stroke-width: 0;
+    //   stroke: white;
+    fill: #f6f6f6;
+}
+.icon-library {
+    width: 1.0625em;
+}
+
+// vision section
+.vision-wrap {
+    background-image: url("../images/vision.jpeg");
+    background-size: cover;
+    height: 55%;
+    display: flex;
+    color: white;
+
+}
+
+.leftSide-vision {
+    flex: 1;
+    background-color: #505050b2;
+    backdrop-filter: blur(8px);
+}
+
+.title-vision{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin: 30px 0;
+}
+.text-vision{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    // text-align: center;
+    margin: 30px 0;
+    padding: 0 20px;
+    line-height: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    letter-spacing: 0.05rem;
+}
+
+.rightSide-vision {
+    flex: 1;
+}

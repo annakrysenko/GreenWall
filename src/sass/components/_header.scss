@@ -1,0 +1,81 @@
+@import "../base/container.scss";
+@import "../utils/variables.scss";
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: 1rem;
+    background-color: rgba(130, 128, 128, 0.347);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    z-index: 100;
+}
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+// logo
+.logo {
+    width: 100px;
+}
+
+// navigation
+.nav-list {
+    display: flex;
+    column-gap: 15px;
+}
+
+.nav-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+
+}
+
+// button contact us
+.contact-us-btn {
+    //   background-color: $accent-btn-color;
+    background-color: $background-color;
+    // background-color: #00571e;
+
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+// social
+.header-social-list{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.header-social-icon{
+    fill: white;
+    width: 20px;
+    height: 20px;
+    transition: fill 0.3s ease-in-out;
+}
+
+// hovers
+
+.nav-btn:hover{
+    color: $background-color;
+}
+
+.header-social-icon:hover{
+    fill: $background-color;
+}
+
+.contact-us-btn:hover{
+background-color: #219048;
+}

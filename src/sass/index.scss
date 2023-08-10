@@ -1,2 +1,15 @@
-@import './common';
-@import './example';
+@import './base/common.scss';
+@import './base/hidden.scss';
+@import './base/container.scss';
+
+@import './utils/breakpoints.scss';
+@import './utils/variables.scss';
+
+@import './components/header.scss';
+@import './components/hero.scss';
+@import './components/aboutUs.scss';
+@import './components/services.scss';
+@import './components/footer.scss';
+@import './components/modal.scss';
+@import './components/dropdown.scss';
+@import './components/fullScreenScroll.scss';
