@@ -46,17 +46,6 @@
   }
 
 
-refs.burgerLinks.forEach((link) => {
-    if(link){
-        link.addEventListener('click', () => {
-          toggleModalBurger()
-          const anchor = link.getAttribute('data-section');
-          console.log(anchor)
-          // window.location.hash= anchor;
-          pageSlider.slideTo(anchor, 800);
 
-        })
-    }
-})
 
 })();

@@ -1,7 +1,7 @@
 let menuLinks = document.querySelectorAll('.slide-link');
-let burgerLinks = document.querySelectorAll('.burger-slide-link');
 let wrapper = document.querySelector('.wrapper-main');
 let pagination = document.querySelector('.page__pagination');
+let burgerLinks = document.querySelectorAll('.burger-nav-list__item');
 
 let pageSlider = new Swiper('.page', {
   wrapperClass: 'page__wrapper',
@@ -38,7 +38,8 @@ let pageSlider = new Swiper('.page', {
   on: {
     init: function () {
       menuSlider();
-      setScrollType()
+      setScrollType();
+      setBurgerScroll()
       // menuSliderBurger()
     },
     slideChange: function () {
@@ -47,13 +48,10 @@ let pageSlider = new Swiper('.page', {
       menuLinks[pageSlider.realIndex].classList.add('_active');
     },
     resize: function () {
-      setScrollType()
-    }
+      setScrollType();
+    },
   },
-
 });
-
-
 
 function menuSlider() {
   if (menuLinks.length > 0) {
@@ -78,26 +76,7 @@ function menuSliderRemove() {
 }
 
 // burger menu
-function menuSliderBurger() {
-  if (menuLinks.length > 0) {
-    menuLinks[pageSlider.realIndex].classList.add('_active');
-    for (let index = 0; index < menuLinks.length; index++) {
-      const menuLink = menuLinks[index];
-      menuLink.addEventListener('click', function (e) {
-        menuSliderRemove();
-        pageSlider.slideTo(index, 800);
-        menuLink.classList.add('_active');
-        e.preventDefault();
-      });
-    }
-  }
-}
-function menuSliderRemoveBurger() {
-  let menuLinkActive = document.querySelector('.slide-link._active');
-  if (menuLinkActive) {
-    menuLinkActive.classList.remove('_active');
-  }
-}
+
 // end burger menu
 
 function setScrollType() {
@@ -122,7 +101,23 @@ function setScrollType() {
       }
     }
   }
-
 }
+
+function setBurgerScroll() {
+ 
+    if (burgerLinks.length > 0) {
+      for (let index = 0; index < burgerLinks.length; index++) {
+        const link = burgerLinks[index];
+        link.addEventListener('click', function (e) {
+          menuSliderRemove();
+          pageSlider.slideTo(index, 800);
+          e.preventDefault();
+          document.querySelector('.burger-menu').classList.toggle('is-hidden');
+                
+        });
+      }
+    }
+  }
+
 
 pageSlider.init();
