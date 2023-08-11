@@ -36,7 +36,7 @@
 
 // form
 .form-title {
-    margin-top: 98px;
+    margin-top: 70px;
     margin-bottom: 20px;
     text-align: center;
     color: white;
@@ -47,6 +47,8 @@
         max-width: 500px;
     }
     @include tablet {
+        margin-top: 90px;
+
         margin-top: 115px;
         font-size: 2rem;
     }
