@@ -28,22 +28,63 @@
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
     padding: 60px 30px;
+    align-items: flex-start;
+    @include max-tablet{
+        margin-top: -100px;
+    }
 }
 
 .title {
-    font-size: 4rem;
     font-weight: 700;
+    font-size: 2rem;
+    // width: 80vw;
+    max-width: 350px;
     color: #fff;
-    width: 550px;
+    @include tablet{
+        font-size: 3rem;
+        max-width: 550px;
+
+    }
+
+    @include desktop{
+        font-size: 4rem;
+        width: 550px;
+
+    }
+
+
 }
 .accent-text {
     color: #037b2d;
 }
 
 .subtitle {
-    font-size: 1rem;
+    font-size: 0.7rem;
+
     font-weight: 400;
     letter-spacing: 0.2rem;
     color: #fff;
+    @include desktop{
+        font-size: 1rem;
+
+
+    }
 }
 // 3 42 37
+.contact-us-btn-hero{
+    display: flex;
+        background-color: $background-color;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        transition: background-color 0.3s ease-in-out;
+
+        @include MINtablet{
+            display: none;
+        }
+
+}
+
+.contact-us-btn-hero:hover {
+    background-color: #219048;
+}

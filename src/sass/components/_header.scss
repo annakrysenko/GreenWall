@@ -21,7 +21,6 @@
         width: 100%;
         padding: 5px 20px;
     @include tablet {
-    
         padding: 5px 40px;
     }
 }
@@ -32,13 +31,19 @@
     height: 60px;
     fill: white;
     cursor: pointer;
+    @include tablet{
+        display: none;
+    }
 }
 // logo
-.logo {
+.logo, .home-link {
     width: 60px;
     margin-left: auto;
-    @include tablet{
+    @include MINtablet{
         margin:0 auto;
+    }
+    @include tablet{
+        margin:0;
     }
     @include desktop{
         width: 100px;
@@ -47,10 +52,12 @@
  
 }
 
+
+
 // navigation
 .nav-list {
     display: none;
-    @include desktop {
+    @include tablet {
         display: flex;
         column-gap: 15px;
     }
@@ -66,9 +73,9 @@
 }
 
 // button contact us
-.contact-us-btn {
+.contact-us-btn{
     display: none;
-    @include tablet{
+    @include MINtablet{
         display: flex;
         background-color: $background-color;
         color: #fff;
@@ -81,7 +88,7 @@
 // social
 .header-social-wrap {
     display: none;
-    @include desktop {
+    @include tablet {
         display: flex;
     }
 }
@@ -109,6 +116,6 @@
     fill: $background-color;
 }
 
-.contact-us-btn:hover {
+.contact-us-btn:hover{
     background-color: #219048;
 }

@@ -1,21 +1,19 @@
-<header class="header">
- 
-
-  <div class="header-wrapper"> 
-<!-- burger -->
+<header class="header" >
+  <div class="header-wrapper">
+    <!-- burger -->
     <div class="burger">
-    <svg class="icon-menu" width="60" height="60" >
-      <use xlink:href="#icon-menu"></use>
-    </svg>
-  </div>
+      <svg class="icon-menu" width="60" height="60">
+        <use xlink:href="#icon-menu"></use>
+      </svg>
+    </div>
 
-<!-- logo -->
-    <img src="./images/logo.png" alt="" class="logo">
+    <!-- logo -->
+    <a href="./index.html" class="home-link"><img src="./images/logo.png" alt="" class="logo" /></a>
 
     <div class="nav-wrapper">
       <nav class="nav">
         <ul class="nav-list">
-          <li class="nav-list__item ">
+          <li class="nav-list__item">
             <a data-section="" class="nav-btn slide-link">Home</a>
           </li>
           <li class="nav-list__item">
@@ -69,66 +67,62 @@
 
     <button class="contact-us-btn">Contact Us</button>
     <!---------------- MOBILE ------------------>
-    <div class="backdrop burger-backdrop">
-      <div class="burger-menu">
-        <div class="burger-nav-wrapper">
-          <svg class="icon icon-cross" id="close" width="32" height="32">
-            <use xlink:href="#icon-cross"> </use>
-          </svg>
-          <nav class="burger-nav">
-            <ul class="burger-nav-list">
-              <li class="burger-nav-list__item ">
-                <a data-section="" class="burger-nav-btn slide-link">Home</a>
-              </li>
-              <li class="burger-nav-list__item">
-                <a data-section="" class="burger-nav-btn slide-link">About Us</a>
-              </li>
-              <li class="burger-nav-list__item">
-                <a data-section="" class="burger-nav-btn slide-link">Services</a>
-              </li>
-              <li class="burger-nav-list__item">
-                <a data-section="" class="burger-nav-btn">Our Team</a>
-              </li>
-              <li class="burger-nav-list__item">
-                <a data-section="" class="burger-nav-btn slide-link">Contacts</a>
-              </li>
-            </ul>
-          </nav>
-          <ul class="burger-header-social-list list">
-            <li class="burger-header-social-item">
-              <a href="" class="burger-header-social-link link">
-                <svg class="burger-header-social-icon" width="10" height="10">
-                  <use href="./images/icons.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
+    <div class="burger-menu is-hidden">
+      <div class="burger-nav-wrapper">
+        <svg class="icon icon-cross" id="close-burger" width="32" height="32">
+          <use xlink:href="#icon-cross"></use>
+        </svg>
+        <nav class="burger-nav">
+          <ul class="burger-nav-list">
+            <li class="burger-nav-list__item" data-section="HomeAnchor">
+              Home
             </li>
-            <li class="burger-header-social-item">
-              <a href="" class="burger-header-social-link link">
-                <svg class="burger-header-social-icon" width="10" height="10">
-                  <use href="./images/icons.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
+            <li class="burger-nav-list__item" data-section="AboutUsAnchor">
+              About Us
             </li>
-            <li class="burger-header-social-item">
-              <a href="" class="burger-header-social-link link">
-                <svg class="burger-header-social-icon" width="10" height="10">
-                  <use href="./images/icons.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
+            <li class="burger-nav-list__item" data-section="ServicesAnchor">
+              Services
             </li>
-            <li class="burger-header-social-item">
-              <a href="" class="burger-header-social-link link">
-                <svg class="burger-header-social-icon" width="10" height="10">
-                  <use href="./images/icons.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
+            <li class="burger-nav-list__item" data-section="">
+              Our Team
+            </li>
+            <li class="burger-nav-list__item" data-section="ContactsAnchor">
+              Contacts
             </li>
           </ul>
-        </div>
+        </nav>
+        <ul class="burger-header-social-list list">
+          <li class="burger-header-social-item">
+            <a href="" class="burger-header-social-link link">
+              <svg class="burger-header-social-icon" width="10" height="10">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="burger-header-social-item">
+            <a href="" class="burger-header-social-link link">
+              <svg class="burger-header-social-icon" width="10" height="10">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="burger-header-social-item">
+            <a href="" class="burger-header-social-link link">
+              <svg class="burger-header-social-icon" width="10" height="10">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="burger-header-social-item">
+            <a href="" class="burger-header-social-link link">
+              <svg class="burger-header-social-icon" width="10" height="10">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
-
     </div>
-  </div>
   </div>
   <!----------------------  -------------------->
 </header>

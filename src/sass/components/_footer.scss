@@ -25,30 +25,49 @@
 .leftSide-contacts {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-left: 40px;
+    @include desktop {
+        margin-left: 40px;
+    }
+    @include MINtablet {
+        align-items: flex-start;
+        margin-left: 15px;
+    }
 }
 
 // form
 .form-title {
-    margin-top: 88px;
-    font-size: 2rem;
+    margin-top: 98px;
     margin-bottom: 20px;
     text-align: center;
     color: white;
-    width: 50vw;
-    // text-shadow: 0px 0px 46px rgba(0,0,0,0.6);
+    font-size: 1.4rem;
+    // width: 100%;
+    @include MINtablet {
+        text-align: start;
+        max-width: 500px;
+    }
+    @include tablet {
+        margin-top: 115px;
+        font-size: 2rem;
+    }
+    @include desktop {
+        max-width: inherit;
+    }
 }
 
 .form-wrap {
-    // background-color: rgba(72, 91, 74, 0.709);
     box-shadow:
-        rgba(66, 66, 66, 0.137) 0px 14px 28px,
+        rgba(47, 47, 47, 0.137) 0px 14px 28px,
         rgba(0, 0, 0, 0.17) 0px 10px 10px;
-    background-color: rgba(255, 255, 255, 0.302);
-    width: 40vw;
-    // margin: 0 auto;
+    background-color: rgba(202, 202, 202, 0.147);
     padding: 30px 20px;
+    padding-top: 20px;
+    backdrop-filter: blur(14px);
+
+    @include MINtablet {
+        padding: 30px 20px;
+        // margin: 0 auto;
+    }
     @media screen and (min-width: 1280px) {
         width: 600px;
     }
@@ -58,26 +77,36 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    row-gap: 20px;
     color: white;
+
+    @include MINtablet {
+        row-gap: 20px;
+    }
 }
 
 .first-line-form,
 .second-line-form,
 .third-line-form {
-    display: flex;
-    align-items: end;
-    column-gap: 5px;
-    margin-bottom: 5px;
+    @include MINtablet {
+        display: flex;
+        align-items: end;
+        column-gap: 5px;
+        margin-bottom: 5px;
+    }
 }
 
 .label {
     display: flex;
     flex-direction: column;
-    row-gap: 5px;
     width: 100%;
-    width: 277px;
-    
+    margin-top: 5px;
+    @include MINtablet {
+        row-gap: 5px;
+        width: 210px;
+    }
+    @include desktop {
+        width: 277px;
+    }
 }
 
 input {
@@ -86,10 +115,17 @@ input {
     padding: 5px 10px;
     height: 38.4px;
     width: 100%;
+    margin-top: 5px;
+    @include MINtablet {
+        margin-top: 0;
+    }
 }
 
-.inputAddress{
+.inputAddress {
     margin-top: 5px;
+
+    @include MINtablet {
+    }
 }
 
 .submit {
@@ -102,6 +138,10 @@ input {
     font-size: 1.5rem;
     font-weight: 500;
     transition: background-color 0.3s ease-in-out;
+    margin-top: 20px;
+    @include MINtablet {
+        margin-top: 0;
+    }
 }
 
 // footer section
@@ -113,28 +153,43 @@ input {
 
 .footer-contacts {
     display: flex;
-    // justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
+    flex-direction: column;
+    padding: 10px 20px;
+    @include tablet {
+        align-items: center;
+
+        padding: 20px 40px;
+
+        flex-direction: row;
+    }
 }
 .footer-list {
     display: flex;
+    justify-content: space-between;
+
     // flex-direction: column;
     // justify-content: space-between;
     // align-items: center;
     // padding: 20px 40px;
-    column-gap: 60px;
-    margin-left: 130px;
-
+    @include tablet {
+        column-gap: 60px;
+        margin-left: 6vw;
+    }
+    @include desktop {
+        margin-left: 130px;
+    }
 }
 
 .footer-list-item {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 5px;
     font-style: normal;
     font-weight: 400;
     font-size: 0.8rem;
+    @include tablet {
+        row-gap: 10px;
+    }
 }
 
 .link {
@@ -167,11 +222,15 @@ input {
     column-gap: 20px;
     flex-direction: column;
     margin: 0 auto;
+    padding-top: 5px;
+    @include MINtablet {
+        padding-top: 0;
+    }
 }
 
 .footer-link-address {
-    width: 200px;
-    line-height: 1.6;
+    // width: 200px;
+    // line-height: 1.6;
 }
 
 .footer-social-list {

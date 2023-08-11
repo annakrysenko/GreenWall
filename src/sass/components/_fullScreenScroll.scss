@@ -32,13 +32,16 @@
 }
 
 .page__bullet {
-    width: 15px;
+    // @include tablet{
+   width: 15px;
     height: 15px;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.455);
     margin: 10px 0;
     border-radius: 50%;
     transition: background-color 0.3s ease-in-out;
+    // }
+ 
 }
 
 .page__bullet_active {
@@ -66,3 +69,4 @@
 .slide-link._active{
     color: $background-color;
 }
+
