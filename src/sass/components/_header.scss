@@ -15,44 +15,45 @@
     z-index: 100;
 }
 .header-wrapper {
-      display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px 20px;
+    @include max-MINtablet {
+        flex-direction: row-reverse;
+    }
     @include tablet {
         padding: 5px 40px;
     }
 }
 
 // burger
-.icon-menu{
-    width: 60px;
-    height: 60px;
+.icon-menu {
+    width: 40px;
+    height: 40px;
     fill: white;
     cursor: pointer;
-    @include tablet{
+    @include tablet {
         display: none;
     }
 }
 // logo
-.logo, .home-link {
+.logo,
+.home-link {
     width: 60px;
-    margin-left: auto;
-    @include MINtablet{
-        margin:0 auto;
+    margin-right: auto;
+    @include MINtablet {
+        margin: 0 auto;
     }
-    @include tablet{
-        margin:0;
+    @include tablet {
+        margin: 0;
     }
-    @include desktop{
+    @include desktop {
         width: 100px;
-        margin:0;
+        margin: 0;
     }
- 
 }
-
-
 
 // navigation
 .nav-list {
@@ -63,8 +64,6 @@
     }
 }
 
-
-
 .nav-btn {
     background: transparent;
     border: none;
@@ -73,9 +72,9 @@
 }
 
 // button contact us
-.contact-us-btn{
+.contact-us-btn {
     display: none;
-    @include MINtablet{
+    @include MINtablet {
         display: flex;
         background-color: $background-color;
         color: #fff;
@@ -116,6 +115,6 @@
     fill: $background-color;
 }
 
-.contact-us-btn:hover{
+.contact-us-btn:hover {
     background-color: #219048;
 }
