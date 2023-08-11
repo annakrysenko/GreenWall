@@ -1,0 +1,40 @@
+.burger-backdrop{
+    background-color: rgb(158, 158, 158);
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.burger-nav-list__item{
+    padding: 20px 10px;
+
+   border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.burger-header-social-list{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.burger-header-social-link {
+    background-color: rgba(255, 255, 255, 0.232);
+    padding: 10px;
+}
+
+.burger-nav-list__item:hover{
+    color:  $background-color;
+}
+
+.burger-header-social-icon{
+    fill: white;
+    width: 30px;
+    height: 30px;
+
+    &:hover{
+        fill: $background-color;
+    }
+}

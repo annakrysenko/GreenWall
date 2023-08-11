@@ -1,17 +1,19 @@
 <header class="header">
+ 
 
-    <div class="header-wrapper container">
-    <!-- <div class="burger-menu" id="burger"> -->
+  <div class="header-wrapper"> 
+<!-- burger -->
+    <div class="burger">
+    <svg class="icon-menu" width="60" height="60" >
+      <use xlink:href="#icon-menu"></use>
+    </svg>
+  </div>
 
-    <div class="logo-header">
-        <!-- <a href="./index.html" class="logo-header-link">
-             Logo
-        </a> -->
- <img src="./images/logo.png" alt=""  class="logo">
-    </div>
+<!-- logo -->
+    <img src="./images/logo.png" alt="" class="logo">
 
     <div class="nav-wrapper">
-      <nav  class="nav">
+      <nav class="nav">
         <ul class="nav-list">
           <li class="nav-list__item ">
             <a data-section="" class="nav-btn slide-link">Home</a>
@@ -29,65 +31,104 @@
             <a data-section="" class="nav-btn slide-link">Contacts</a>
           </li>
         </ul>
-      </nav>    
+      </nav>
     </div>
 
     <div class="header-social-wrap">
       <ul class="header-social-list list">
-      <li class="header-social-item">
-        <a href="" class="header-social-link link">
-          <svg class="header-social-icon" width="20" height="20">
-            <use href="./images/icons.svg#icon-instagram-2"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="header-social-item">
-        <a href="" class="header-social-link link">
-          <svg class="header-social-icon" width="20" height="20">
-            <use href="./images/icons.svg#icon-twitter-1"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="header-social-item">
-        <a href="" class="header-social-link link">
-          <svg class="header-social-icon" width="20" height="20">
-            <use href="./images/icons.svg#icon-facebook-1"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="header-social-item">
-        <a href="" class="header-social-link link">
-          <svg class="header-social-icon" width="20" height="20">
-            <use href="./images/icons.svg#icon-linkedin-1"></use>
-          </svg>
-        </a>
-      </li>
-    </ul></div>
+        <li class="header-social-item">
+          <a href="" class="header-social-link link">
+            <svg class="header-social-icon" width="10" height="10">
+              <use href="./images/icons.svg#icon-instagram-2"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-social-item">
+          <a href="" class="header-social-link link">
+            <svg class="header-social-icon" width="10" height="10">
+              <use href="./images/icons.svg#icon-twitter-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-social-item">
+          <a href="" class="header-social-link link">
+            <svg class="header-social-icon" width="10" height="10">
+              <use href="./images/icons.svg#icon-facebook-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-social-item">
+          <a href="" class="header-social-link link">
+            <svg class="header-social-icon" width="10" height="10">
+              <use href="./images/icons.svg#icon-linkedin-1"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
 
     <button class="contact-us-btn">Contact Us</button>
-
-      <!-- <div class="header-menu visually-hidden">
-          <nav  class="menu-nav">
-        <ul class="nav-list">
-          <li class="nav-list__item">
-            <a href="./index.html#offers" class="nav-text">Позиції</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="./index.html#advantages" class="nav-text">Переваги</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="./index.html#reviews" class="nav-text">Відгуки</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="./index.html#footer" class="nav-text">Контакти</a>
-          </li>
-        </ul>
-      </nav>
+    <!---------------- MOBILE ------------------>
+    <div class="backdrop burger-backdrop">
+      <div class="burger-menu">
+        <div class="burger-nav-wrapper">
+          <svg class="icon icon-cross" id="close" width="32" height="32">
+            <use xlink:href="#icon-cross"> </use>
+          </svg>
+          <nav class="burger-nav">
+            <ul class="burger-nav-list">
+              <li class="burger-nav-list__item ">
+                <a data-section="" class="burger-nav-btn slide-link">Home</a>
+              </li>
+              <li class="burger-nav-list__item">
+                <a data-section="" class="burger-nav-btn slide-link">About Us</a>
+              </li>
+              <li class="burger-nav-list__item">
+                <a data-section="" class="burger-nav-btn slide-link">Services</a>
+              </li>
+              <li class="burger-nav-list__item">
+                <a data-section="" class="burger-nav-btn">Our Team</a>
+              </li>
+              <li class="burger-nav-list__item">
+                <a data-section="" class="burger-nav-btn slide-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="burger-header-social-list list">
+            <li class="burger-header-social-item">
+              <a href="" class="burger-header-social-link link">
+                <svg class="burger-header-social-icon" width="10" height="10">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="burger-header-social-item">
+              <a href="" class="burger-header-social-link link">
+                <svg class="burger-header-social-icon" width="10" height="10">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="burger-header-social-item">
+              <a href="" class="burger-header-social-link link">
+                <svg class="burger-header-social-icon" width="10" height="10">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="burger-header-social-item">
+              <a href="" class="burger-header-social-link link">
+                <svg class="burger-header-social-icon" width="10" height="10">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      </div>
-    
-      </a>
-    </div> -->
 
+    </div>
+  </div>
+  </div>
+  <!----------------------  -------------------->
 </header>
-

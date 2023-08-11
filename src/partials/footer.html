@@ -1,13 +1,13 @@
 <div class="contacts-wrap">
-  <div class="container formSides">
-    <div class="leftSide-contacts">
+    <div class="container leftSide-contacts">
       <h2 class="form-title">
         Sign Up the form to get
         <span class="accent-text">a free consultation</span> with our manager
       </h2>
       <div class="form-wrap">
         <form id="form" class="form">
-          <label for="formName" class="label"
+          <div class="first-line-form">
+            <label for="formName" class="label"
             >Full Name:
             <input
               type="text"
@@ -29,7 +29,9 @@
               required
             />
           </label>
-          <label for="formPhone" class="label">
+        </div>
+          <div class="second-line-form">
+            <label for="formPhone" class="label">
             Phone number:
             <input
               type="tel"
@@ -39,8 +41,22 @@
               class=""
               required
             />
-          </label>
-          <label for="formAddress" class="label"
+          </label> 
+          <div class="custom-dropdown "
+          ">
+            <input class="dropdown-toggle-footer" class="right-input" name='inputServices' id="inputServices" placeholder="Choose a service" required></input>
+            <div class="dropdown-content-footer is-hidden">
+              <div class="dropdown-item" data-local="footer">Bookkeeping</div>
+              <div class="dropdown-item" data-local="footer">Payroll</div>
+              <div class="dropdown-item" data-local="footer">Financial analysis</div>
+              <div class="dropdown-item" data-local="footer">Tax preparation</div>
+              <div class="dropdown-item" data-local="footer">Legal services</div>
+              <div class="dropdown-item" data-local="footer">Company Formation</div>
+            </div>
+          </div>
+          </div>
+          <!-- <div class="third-line-form">       -->
+          <label for="formAddress" class=""
             >Address:
             <input
               type="text"
@@ -51,23 +67,11 @@
               required
             />
           </label>
-          <div class="custom-dropdown">
-            <input class="dropdown-toggle-footer"  name='inputServices' id="inputServices" placeholder="Choose a service" required></input>
-            <div class="dropdown-content-footer is-hidden">
-              <div class="dropdown-item" data-local="footer">Bookkeeping</div>
-              <div class="dropdown-item" data-local="footer">Payroll</div>
-              <div class="dropdown-item" data-local="footer">Financial analysis</div>
-              <div class="dropdown-item" data-local="footer">Tax preparation</div>
-              <div class="dropdown-item" data-local="footer">Legal services</div>
-              <div class="dropdown-item" data-local="footer">Company Formation</div>
-            </div>
-          </div>
+        <!-- </div> -->
 
-          <button type="submit" class="submit">Send</button>
+          <button type="submit" class="submit ">Send</button>
         </form>
-      </div>
     </div>
-    <div class="rightSide-contacts"></div>
   </div>
 
   <footer class="footer">
@@ -116,28 +120,28 @@
             <ul class="footer-social-list list">
               <li class="footer-social-item">
                 <a href="" class="footer-social-link link">
-                  <svg class="footer-social-icon" width="60" height="60">
+                  <svg class="footer-social-icon" width="30" height="30">
                     <use href="./images/icons.svg#icon-instagram-2"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-social-item">
                 <a href="" class="footer-social-link link">
-                  <svg class="footer-social-icon" width="60" height="60">
+                  <svg class="footer-social-icon" width="30" height="30">
                     <use href="./images/icons.svg#icon-twitter-1"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-social-item">
                 <a href="" class="footer-social-link link">
-                  <svg class="footer-social-icon" width="60" height="60">
+                  <svg class="footer-social-icon" width="30" height="30">
                     <use href="./images/icons.svg#icon-facebook-1"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-social-item">
                 <a href="" class="footer-social-link link">
-                  <svg class="footer-social-icon" width="60" height="60">
+                  <svg class="footer-social-icon" width="30" height="30">
                     <use href="./images/icons.svg#icon-linkedin-1"></use>
                   </svg>
                 </a>

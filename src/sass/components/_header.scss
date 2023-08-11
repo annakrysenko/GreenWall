@@ -1,5 +1,6 @@
 @import "../base/container.scss";
 @import "../utils/variables.scss";
+@import "../utils/breakpoints.scss";
 
 .header {
     position: fixed;
@@ -7,75 +8,107 @@
     left: 0;
     right: 0;
     color: white;
-    font-size: 1rem;
+    font-size: 0.8rem;
     background-color: rgba(130, 128, 128, 0.347);
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
     z-index: 100;
 }
 .header-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+      display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 5px 20px;
+    @include tablet {
+    
+        padding: 5px 40px;
+    }
+}
+
+// burger
+.icon-menu{
+    width: 60px;
+    height: 60px;
+    fill: white;
+    cursor: pointer;
 }
 // logo
 .logo {
-    width: 100px;
+    width: 60px;
+    margin-left: auto;
+    @include tablet{
+        margin:0 auto;
+    }
+    @include desktop{
+        width: 100px;
+        margin:0;
+    }
+ 
 }
 
 // navigation
 .nav-list {
-    display: flex;
-    column-gap: 15px;
+    display: none;
+    @include desktop {
+        display: flex;
+        column-gap: 15px;
+    }
 }
+
+
 
 .nav-btn {
     background: transparent;
     border: none;
     color: white;
     transition: color 0.3s ease-in-out;
-
 }
 
 // button contact us
 .contact-us-btn {
-    //   background-color: $accent-btn-color;
-    background-color: $background-color;
-    // background-color: #00571e;
-
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-
-    transition: background-color 0.3s ease-in-out;
-
+    display: none;
+    @include tablet{
+        display: flex;
+        background-color: $background-color;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        transition: background-color 0.3s ease-in-out;
+    }
 }
 
 // social
-.header-social-list{
+.header-social-wrap {
+    display: none;
+    @include desktop {
+        display: flex;
+    }
+}
+
+.header-social-list {
     display: flex;
     column-gap: 20px;
     align-items: center;
 }
 
-.header-social-icon{
+.header-social-icon {
     fill: white;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     transition: fill 0.3s ease-in-out;
 }
 
 // hovers
 
-.nav-btn:hover{
+.nav-btn:hover {
     color: $background-color;
 }
 
-.header-social-icon:hover{
+.header-social-icon:hover {
     fill: $background-color;
 }
 
-.contact-us-btn:hover{
-background-color: #219048;
+.contact-us-btn:hover {
+    background-color: #219048;
 }

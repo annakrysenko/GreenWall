@@ -55,8 +55,8 @@
         transform: translate(-50%, -50%);
     }
     @include desktop {
-        width: 40vw;
-        height: 70vh;
+       width: 600px;
+       height: auto;
         transform: translate(-50%, -50%);
     }
 }
@@ -82,12 +82,14 @@
 
 
 .title-modal{
-    margin-top: 30px;
+    margin: 30px;
     font-size: 1.5rem;
     font-weight: 600;
+    width: auto;
 }
 
 .form-submit{
-margin-top: 30px;
+margin: 30px 0;
+width: 100%;
 }
 
