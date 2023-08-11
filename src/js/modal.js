@@ -52,7 +52,9 @@ refs.burgerLinks.forEach((link) => {
           toggleModalBurger()
           const anchor = link.getAttribute('data-section');
           console.log(anchor)
-          window.location.hash= anchor;
+          // window.location.hash= anchor;
+          pageSlider.slideTo(anchor, 800);
+
         })
     }
 })
