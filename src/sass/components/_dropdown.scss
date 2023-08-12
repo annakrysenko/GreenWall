@@ -4,6 +4,7 @@
     display: inline-block;
     width: 100%;
     margin-top: 10px;
+    
     @include MINtablet{
       width: 210px;
       margin-top:0;
@@ -34,6 +35,8 @@
     padding: 10px;
     color: black;
     cursor: pointer;
+        font-size: 0.7rem;
+
   }
   
   .dropdown-item:hover {
