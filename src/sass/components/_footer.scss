@@ -1,5 +1,5 @@
 .contacts-wrap {
-    max-height: 100vh;
+    height: 100vh;
     width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
@@ -172,6 +172,10 @@ input {
 
 // footer section
 .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color: rgb(72, 91, 74);
     // height: 20vh;
     color: white;
