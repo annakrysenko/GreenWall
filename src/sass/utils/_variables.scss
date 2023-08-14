@@ -1,8 +1,15 @@
-$primary-font-style: "Marck Script", cursive;
+$primary-font-style: 'Outfit', sans-serif;
 $secondary-font-style: "Roboto", sans-serif;
 
-$background-color: #078032;
-$primary-text-color: #fff;
+$background-color: rgb(3, 42, 30);
+
+$primary-text-color: rgb(0, 0, 0);
+$secondary-text-color: rgb(114, 114, 114);
+$accent-text: rgb(36, 127, 50);
+
+$accent-btn-color: rgb(196,170,94);
+$hover-btn-color: rgb(227, 208, 152);
+$background-color-link: rgba(255, 255, 255, 0.102);
 
 // $accent-btn-color:rgb(195,169,89);
 // $hover-btn-color: #81c5ff;

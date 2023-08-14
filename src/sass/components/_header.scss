@@ -9,22 +9,28 @@
     right: 0;
     color: white;
     font-size: 0.8rem;
-    background-color: rgba(130, 128, 128, 0.347);
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
+    background-color: $background-color;
+ 
     z-index: 100;
 }
 .header-wrapper {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 5px 20px;
+    max-width: 1280px;
+    margin: 0 auto;
     @include max-MINtablet {
         flex-direction: row-reverse;
     }
     @include tablet {
-        padding: 5px 40px;
+        padding: 10px 30px;
+        // column-gap: 30px;
+    }
+    @include desktop {
+        padding: 5px 30px;
+        // column-gap: 80px;
     }
 }
 
@@ -35,7 +41,8 @@
     fill: white;
     cursor: pointer;
     @include tablet {
-        display: none;
+    display: none;
+
     }
 }
 // logo
@@ -48,53 +55,78 @@
     }
     @include tablet {
         margin: 0;
+        margin-right: auto;
+ 
     }
     @include desktop {
         width: 100px;
-        margin: 0;
+        // margin: 0;
+        // margin-right: auto;
     }
 }
 
 // navigation
+
+.nav-wrapper{
+    @include tablet {
+        margin-right: 50px;
+    }
+    @media screen and (min-width: 850px) {
+        margin-right: auto;
+
+    }
+    @include desktop {
+        margin-right: 340px;
+    }
+
+}
+
 .nav-list {
     display: none;
     @include tablet {
         display: flex;
+        column-gap: 8px;
+    }
+    @include desktop {
         column-gap: 15px;
+
     }
 }
 
+.nav-list__item{
+
+}
+
 .nav-btn {
+    padding: 4px 8px;
+
     background: transparent;
     border: none;
     color: white;
     transition: color 0.3s ease-in-out;
 }
 
-// button contact us
-.contact-us-btn {
-    display: none;
-    @include MINtablet {
-        display: flex;
-        background-color: $background-color;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        transition: background-color 0.3s ease-in-out;
-    }
-}
 
 // social
 .header-social-wrap {
     display: none;
     @include tablet {
         display: flex;
+        margin-right: 20px;
+
+    }
+    @media screen and (min-width: 850px) {
+        margin-right: 50px;
+ 
+     }
+    @include desktop {
+        margin-right: 60px;
     }
 }
 
 .header-social-list {
     display: flex;
-    column-gap: 20px;
+    column-gap: 10px;
     align-items: center;
 }
 
@@ -108,13 +140,29 @@
 // hovers
 
 .nav-btn:hover {
-    color: $background-color;
+    background-color: $background-color-link;
+    // color: $hover-btn-color;
+    color: #fff;
 }
 
 .header-social-icon:hover {
-    fill: $background-color;
+    fill: $hover-btn-color;
 }
 
 .contact-us-btn:hover {
-    background-color: #219048;
+    background-color: $hover-btn-color;
 }
+
+// button contact us
+.contact-us-btn {
+    display: none;
+    @include MINtablet {
+        display: flex;
+        background-color: $accent-btn-color;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        transition: background-color 0.3s ease-in-out;
+    }
+}
+

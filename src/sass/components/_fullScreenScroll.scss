@@ -1,7 +1,14 @@
 .wrapper-main {
-    min-height: 100%;
+    // min-height: 100%;
+    height: 100%;
+
 }
 
+.screen__content{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
 .page {
     position: fixed;
     width: 100%;
@@ -25,7 +32,7 @@
 .page__pagination {
     position: absolute;
     top: 50%;
-    right: 50px;
+    right: 25px;
     transform: translate(0px, -50%);
     display: flex;
     flex-direction: column;
@@ -36,7 +43,7 @@
    width: 15px;
     height: 15px;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.455);
+    background-color: rgba(133, 133, 133, 0.455);
     margin: 10px 0;
     border-radius: 50%;
     transition: background-color 0.3s ease-in-out;
@@ -45,28 +52,34 @@
 }
 
 .page__bullet_active {
-    background-color: $background-color;
+    background-color: $accent-text;
 }
 
 .page__scroll {
     position: absolute;
     top: 0;
     right: 0;
-    width: 4px;
+    width: 6px;
     height: 100%;
-    background-color: rgba(9, 57, 8, 0.304);
+    background-color: rgba(9, 57, 8, 0.183);
 }
 
 .page__drag-scroll {
     position: absolute;
+    z-index: 200;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(68, 225, 65, 0.304);
+    background-color: $accent-text;
     cursor: pointer;
 }
 
+.slide-link{
+    transition: background 0.3s ease-in-out;
+}
+
 .slide-link._active{
-    color: $background-color;
+    color: white;
+    background: $background-color-link;
 }
 

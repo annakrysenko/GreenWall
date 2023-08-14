@@ -2,11 +2,9 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    background-image: linear-gradient(180deg, rgba(85, 85, 85, 0.671) 0%, rgba(255, 255, 255, 0.694) 100%);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
-    background-image: url("../images/services.jpeg");
     @include tablet {
         background-size: cover;
     }
@@ -16,116 +14,142 @@
     }
 }
 
+.rightSide-services{
+    @include desktop {
+        width: 100%;
+
+    }
+}
 .services-title {
     font-size: 1.4rem;
-
     margin-top: 80px;
     font-weight: 700;
-    color: #ffffff;
     margin-left: 80px;
-    text-align: start;
+    // text-align: start;
     margin-bottom: 20px;
-    // text-shadow: 0px 0px 23px rgba(0,0,0,0.4);
     @include tablet {
         font-size: 2rem;
         margin-top: 89px;
     }
+    @include desktop {
+        margin-top: 109px;
+
+    }
+
 }
 
 .services-title-list {
-    // margin-top: 140px;
-    font-size: 1rem;
     font-weight: 500;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 5px;
-    letter-spacing: 0.07rem;
+    // text-align: center;
+    // padding: 10px 5px;
+    font-family: "Roboto", sans-serif;
 }
 
 .rightSide-services {
-    // padding-left: 40px;
-    // flex: 2.5;
+
 }
 
 .leftSide-services {
-    // flex: 1;
-    // background-image: url("../images/form.jpg");
     background-size: cover;
     background-position: center;
-    // margin-right: -20px;
-    // margin-top: 60px;
+
 }
 
 .services-list {
     display: flex;
-    column-gap: 3px;
     row-gap: 5px;
-    // row-gap: 3rem;
-    // padding: 20px 0;
     flex-wrap: wrap;
-    color: white;
-    justify-content: center;
-}
-.services-list__item {
-    width: calc(100% / 2 - 2px);
-    height: 20vh;
-
-    overflow: hidden;
+    color: $primary-text-color;
     @include MINtablet {
-        width: calc(100% / 3 - 3px);
-        height: 35vh;
+        column-gap: 20px;
+        justify-content: space-between;
+        height: 80%;
+        row-gap: 20px;
     }
     @include desktop {
-        width: calc(100% / 3 - 40px);
-        height: 30vh;
+        height: 70%;
+
     }
+
+}
+.services-list__item {
 }
 
-.overlay-services {
+.services-list__item {
     width: 100%;
-    height: 100%;
-    background-color: #4e6355;
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    align-items: center;
-    text-align: center;
+    // height: 100%;
+    background-color: transparent;
+    border: 1px solid $accent-btn-color;
     display: flex;
     flex-direction: column;
     padding: 10px;
-
     @include MINtablet {
+        column-gap: 20px;
+        justify-content: space-between;
+        width: calc(100% / 2 - 20px);
         padding: 20px;
     }
+    @include desktop {
+        width: calc(100% / 3 - 20px);
+}
+  
 }
 
 .services-title-list {
-    font-size: 0.9rem;
+    font-family: $primary-font-style;
+    font-size: 1rem;
+
     @include MINtablet {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+    }
+    @include tablet {
+        font-size: 1.3rem;
+    }
+    @include tablet {
+        font-size: 1.6rem;
     }
 }
 
 .services-text {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
+    margin-top: 5px;
+    color: $secondary-text-color;
+
     @include MINtablet {
+        margin-top: 10px;
+        font-size: 0.8rem;
+
     }
-    color: rgba(255, 255, 255, 0.569);
+    @include tablet {
+        margin-top: 15px;
+    }
+    @include desktop {
+        font-size: 0.9rem;
+    }
 }
 
 .readmore-link {
     margin-top: auto;
-    padding: 6px 10px;
-    // border: 1px solid #405245dc ;
-    background-color: rgba(255, 255, 255, 0.277);
+    margin-right: auto;
+    color: $accent-btn-color;
     transition: background-color 0.3s ease-in-out;
+    font-size: 0.7rem;
+    margin-top: 10px;
     &:hover {
-        background-color: rgba(233, 230, 230, 0.47);
+        background-color: $background-color-link;
     }
 
     @include MINtablet {
-        padding: 10px 40px;
+        margin-top: auto;
+        font-size: 0.9rem;
+        
     }
-    // margin-right: auto;
+    @include MINtablet {
+        margin-top: auto;
+        font-size: 1.1rem;
+        
+    }
+
 }
 // =================  accordion V2  =================
 .ac {

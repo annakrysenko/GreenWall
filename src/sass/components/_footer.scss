@@ -1,6 +1,11 @@
+.contacts {
+    width: 100%;
+}
+
 .contacts-wrap {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    // width: 100%;
+    padding-top: 70px; ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -8,9 +13,21 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: linear-gradient(180deg, rgba(67, 67, 67, 0.45) 0%, rgba(159, 159, 159, 0) 100%),
-        url("../images/contacts.jpg");
+    // background-image: linear-gradient(180deg, rgba(67, 67, 67, 0.45) 0%, rgba(159, 159, 159, 0) 100%);
+    // url("../images/contacts.jpg");
     background-position: top;
+    @include MINtablet {
+        padding-top: 90px; ;
+
+    }
+    @include tablet {
+        align-items: center;
+        padding-top: 130px; ;
+
+       
+    }
+    @include desktop {
+    }
 }
 
 // .formSides {
@@ -25,31 +42,40 @@
 .leftSide-contacts {
     display: flex;
     flex-direction: column;
-    @include desktop {
-        margin-left: 40px;
-    }
+    height: 100%;
     @include MINtablet {
         align-items: flex-start;
-        margin-left: 15px;
+        align-items: center;
+
+        // margin-left: 15px;
+    }
+    @include tablet {
+        align-items: center;
+        // max-width: 500px;
+    }
+    @include desktop {
     }
 }
 
 // form
 .form-title {
-    margin-top: 70px;
+    // margin-top: 70px;
     margin-bottom: 20px;
     text-align: center;
-    color: white;
+    // color: white;
     font-size: 1rem;
     // width: 100%;
     @include MINtablet {
-        text-align: start;
-        max-width: 500px;
+        text-align: center;
+        // max-width: 500px;
+        font-size: 1.4rem;
+
+
     }
     @include tablet {
-        margin-top: 90px;
+        // margin-top: 90px;
 
-        margin-top: 115px;
+        // margin-top: 115px;
         font-size: 2rem;
     }
     @include desktop {
@@ -58,10 +84,11 @@
 }
 
 .form-wrap {
-    box-shadow:
-        rgba(47, 47, 47, 0.137) 0px 14px 28px,
-        rgba(0, 0, 0, 0.17) 0px 10px 10px;
-    background-color: rgba(202, 202, 202, 0.147);
+    // box-shadow:
+    //     rgba(47, 47, 47, 0.137) 0px 14px 28px,
+    //     rgba(0, 0, 0, 0.17) 0px 10px 10px;
+    // border: 1px solid $background-color;
+    background-color: $background-color;
     padding: 5px 10px 10px 10px;
     margin-bottom: 15px;
     // padding-top: 20px;
@@ -69,12 +96,16 @@
 
     @include MINtablet {
         padding: 15px 20px;
+        height: 60%;
+        width: 100%;
+        max-height: 600px;
+        padding: 30px;
         // margin: 0 auto;
     }
     @media screen and (min-width: 1280px) {
         padding: 30px 20px;
 
-        width: 600px;
+        // width: 600px;
     }
 }
 
@@ -85,6 +116,9 @@
     color: white;
 
     @include MINtablet {
+        height: 100%;
+        justify-content: space-between;
+
         // row-gap: 10px;
     }
 }
@@ -93,26 +127,43 @@
 .second-line-form,
 .third-line-form {
     @include MINtablet {
-        display: flex;
-        align-items: end;
-        column-gap: 5px;
-        margin-bottom: 5px;
+        // display: flex;
+        // align-items: end;
+        // column-gap: 5px;
+        // margin-bottom: 5px;
     }
 }
 
+
+
 .label {
+
+}
+
+label {
+    display: flex;
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-top: 5px;
     font-size: 0.7rem;
+    align-items: self-end;
     @include MINtablet {
         row-gap: 5px;
-        width: 210px;
+        font-size: 0.9rem;
+        flex-direction: row;
+  
     }
     @include desktop {
-        width: 277px;
     }
+}
+
+.label-text{
+    @include MINtablet {
+    width: 90px;
+    margin-right: 15px;
+text-align: end;    
+} 
 }
 
 input {
@@ -120,41 +171,42 @@ input {
     border: none;
     padding: 5px 10px;
     // height: 38.4px;
+    background-color: $background-color;
+    border-bottom: 1px solid $secondary-text-color;
+    color: white;
     width: 100%;
     margin-top: 5px;
     padding: 5px 10px;
     height: 28.4px;
 
     @include MINtablet {
-    height: 38.4px;
+        height: 38.4px;
         margin-top: 0;
     }
 }
 
-#inputServices::placeholder{
+#inputServices::placeholder {
     font-size: 0.7rem;
-
 }
-#inputServices{
+#inputServices {
     font-size: 0.7rem;
-
 }
 
 .inputAddress {
     margin-top: 5px;
     font-size: 0.7rem;
-   
+
     @include MINtablet {
     }
 }
 
-.inputAddress2{
+.inputAddress2 {
     margin-top: 5px;
 }
 
 .submit {
     // background-color: rgb(169, 169, 23);
-    background-color: #0d7331;
+    background-color: $accent-btn-color;
     color: white;
     text-transform: uppercase;
     border: 0;
@@ -164,9 +216,8 @@ input {
     transition: background-color 0.3s ease-in-out;
     margin-top: 20px;
     @include MINtablet {
-        font-size: 1.2rem;
-
-        margin-top: 15px;
+        font-size: 1.3rem;
+        margin: 30px 0 40px 0;
     }
 }
 
@@ -177,7 +228,7 @@ input {
     left: 0;
     right: 0;
     padding-bottom: 5px;
-    background-color: rgb(72, 91, 74);
+    background-color: $background-color;
     // height: 20vh;
     color: white;
 }
@@ -189,7 +240,7 @@ input {
     @include tablet {
         align-items: center;
 
-        padding: 20px 40px;
+        padding: 10px 30px;
 
         flex-direction: row;
     }
@@ -287,5 +338,5 @@ input {
 }
 
 .submit:hover {
-    background-color: #219048;
+    background-color: $hover-btn-color;
 }
