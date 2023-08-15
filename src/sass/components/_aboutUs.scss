@@ -1,6 +1,6 @@
 .aboutUs-Wrap {
-    width: 100%;
-    height: 100%;
+    // width: 100%;
+    height: 100vh;
     margin: 0 auto;
 }
 
@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    margin-top: 90px;
+    margin-top: 40px;
     @include MINtablet {
         margin-top: 0;
 
@@ -19,12 +19,13 @@
     }
     @include tablet {
         flex-direction: row;
-        width: 100%;
 
     }
     @include desktop {
         padding-top: 80px;
         padding-bottom: 30px;
+        // width: 100%;
+
         // padding: 20px;
     }
 }
@@ -51,9 +52,10 @@
     flex-direction: column;
     font-weight: 400;
     justify-content: space-between;
+    color: $secondary-text-color;
 
     @include desktop {
-        font-size: 1rem;
+        // font-size: 0.7rem;
     }
 }
 
@@ -95,7 +97,7 @@
 
 .icon {
     display: inline-block;
-    height: 2em;
+    height: 3em;
     stroke-width: 0;
     fill: $accent-btn-color;
     margin-right: 20px;

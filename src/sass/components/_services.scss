@@ -1,5 +1,5 @@
 .services-wrap {
-    width: 100vw;
+    // width: 100vw;
     height: 100vh;
     display: flex;
     background-repeat: no-repeat;
@@ -11,20 +11,22 @@
     @include desktop {
         background-size: 110%;
         background-position: center;
+        // width: 100%;
+
     }
 }
 
 .rightSide-services{
     @include desktop {
-        width: 100%;
+        // width: 100%;
 
     }
 }
 .services-title {
     font-size: 1.4rem;
-    margin-top: 80px;
+    margin-top: 40px;
     font-weight: 700;
-    margin-left: 80px;
+    // margin-left: 80px;
     // text-align: start;
     margin-bottom: 20px;
     @include tablet {
@@ -132,24 +134,47 @@
     margin-top: auto;
     margin-right: auto;
     color: $accent-btn-color;
-    transition: background-color 0.3s ease-in-out;
+    transition: color  0.3s ease-in-out;
     font-size: 0.7rem;
     margin-top: 10px;
+    display: flex;
+    column-gap: 5px;
+    align-items: end;
     &:hover {
-        background-color: $background-color-link;
+      color: $hover-btn-color;
     }
+    &:hover .icon-arrow-right2{ 
+        fill: $hover-btn-color;
+      }
 
     @include MINtablet {
         margin-top: auto;
         font-size: 0.9rem;
-        
+        column-gap: 10px;
+
     }
-    @include MINtablet {
+    @include tablet {
         margin-top: auto;
         font-size: 1.1rem;
         
     }
 
+}
+
+.icon-arrow-right2{
+    width: 10px;
+    height: 10px;
+    transition: fill  0.3s ease-in-out;
+
+    @include MINtablet {
+        width: 15px;
+        height: 15px;
+        
+    }
+    @include tablet {
+    
+        
+    }
 }
 // =================  accordion V2  =================
 .ac {

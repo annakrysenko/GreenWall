@@ -1,75 +1,83 @@
 <div class="backdrop is-hidden">
   <div class="modal">
     <div class="form-wrap wrap-modal">
+
       <svg class="icon icon-cross" id="close" width="32" height="32">
         <use xlink:href="#icon-cross"> </use>
       </svg>
+
       <h2 class="form-title title-modal">
         Sign Up the form to get
         <span class="accent-text">a free consultation</span> with our manager
       </h2>
-      <div class="first-line-form">
-        <label for="formName" class="label"
-        >Full Name:
+
+      <form id="formModal" class="form" autocomplete="off">
+
+      <label for="inputServicesModal"> 
+        <input class="dropdown-toggle-modal" class="right-input" name='inputServicesModal' id="inputServices" placeholder="Choose a service" value='' required readonly />
+        <div class="custom-dropdown">
+          <div class="dropdown-content-modal">
+            <div class="dropdown-item" data-local="modal">Bookkeeping</div>
+            <div class="dropdown-item" data-local="modal">Payroll</div>
+            <div class="dropdown-item" data-local="modal">Financial analysis</div>
+            <div class="dropdown-item" data-local="modal">Tax preparation</div>
+            <div class="dropdown-item" data-local="modal">Legal services</div>
+            <div class="dropdown-item" data-local="modal">Company Formation</div>
+            <svg class="icon icon-ctrl"><use xlink:href="#icon-ctrl"></use></svg>
+          </div>
+        </div>
+
+        <svg class="icon icon-ctrl-modal">
+          <use xlink:href="#icon-ctrl"></use>
+        </svg>
+
+      </label>
+        
+      
         <input
           type="text"
-          id="formName"
+          id="formNameModal"
           name="formName"
           value=""
           class=""
           required
+          placeholder="Full Name"
         />
-      </label>
-      <label for="formEmail" class="label"
-        >Email:
+ 
         <input
           type="email"
-          id="formEmail"
+          id="formEmailModal"
           name="formEmail"
           value=""
           class=""
           required
+          placeholder="Email"
         />
-      </label>
-    </div>
-      <div class="second-line-form">
-        <label for="formPhone" class="label">
-        Phone number:
+
         <input
           type="tel"
-          id="formPhone"
+          id="formPhoneModal"
           name="formPhone"
           value=""
           class=""
           required
+          placeholder="Phone Number"
         />
-      </label> 
-      <div class="custom-dropdown">
-        <input class="dropdown-toggle-modal" class="right-input" name='inputServices' id="inputServices" placeholder="Choose a service" required readonly></input>
-        <div class="dropdown-content-modal">
-          <div class="dropdown-item" data-local="modal">Bookkeeping</div>
-          <div class="dropdown-item" data-local="modal">Payroll</div>
-          <div class="dropdown-item" data-local="modal">Financial analysis</div>
-          <div class="dropdown-item" data-local="modal">Tax preparation</div>
-          <div class="dropdown-item" data-local="modal">Legal services</div>
-          <div class="dropdown-item" data-local="modal">Company Formation</div>
-        </div>
-      </div>
-      </div>
+  
       <!-- <div class="third-line-form">       -->
-      <label for="formAddress" class="modal-input-address"
+      <!-- <label for="formAddress" class="modal-input-address"
         >Address:
         <input
           type="text"
-          id="formAddress"
+          id="formAddressModal"
           name="formAddress"
           value=""
           class="inputAddress"
           required
         />
-      </label>
+      </label> -->
 
-        <button type="submit" class="submit form-submit">Send</button>
+        <button type="submit"  id="submitModal" class="submit form-submit">Send</button>
       </form>
     </div>
   </div>

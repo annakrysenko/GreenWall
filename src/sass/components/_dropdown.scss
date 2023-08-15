@@ -1,16 +1,20 @@
 // dropdown
 .custom-dropdown {
+  font-family: $secondary-font-style;
+
     position: relative;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     width: 100%;
-    margin-top: 10px;
+    font-size: 0.7rem;
+
+    // margin-top: 10px;
     // border: 1px solid $background-color;
 
     
     @include MINtablet{
       // width: 210px;
-      margin-top:20px;
+      // margin-top:20px;
 
     }
     @include desktop{
@@ -19,8 +23,11 @@
   }
   
   .dropdown-content-modal, .dropdown-content-footer {
+    font-family: $secondary-font-style;
+
     display: none;
     position: absolute;
+    top: 0;
     background-color: #f9f9f9;
     width: 100%;
 
@@ -39,7 +46,9 @@
     padding: 10px;
     color: rgb(74, 74, 74);
     cursor: pointer;
-        font-size: 0.7rem;
+    font-size: 0.7rem;
+    font-family: $secondary-font-style;
+
 
   }
   
@@ -50,18 +59,22 @@
 
   .dropdown-toggle-modal, .dropdown-toggle-footer{
     background-color: white;
-    background-color: $background-color;
+    // background-color: $-color;
     border: 1px solid white;
-    max-width: 150px;
-    text-align: center;
+    // max-width: 150px;
+    // text-align: center;
     // margin: 0 auto;
 
     // border: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     padding: 10px;
     font-size: 1rem;
     cursor: pointer;
+    border-bottom: 1px solid $secondary-text-color;
+    font-family: $secondary-font-style;
+    font-size: 0.7rem;
+
   }
 
   // 
-  
+
