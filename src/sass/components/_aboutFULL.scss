@@ -1,0 +1,35 @@
+.about-hero{
+    background-image: url('../images/team/Oleksandr3.jpg');
+    background-size: cover;
+    max-width: 1480px;
+    background-position: center;
+    @include tablet{
+
+    }
+}
+
+.about-top{
+    color: black;
+}
+
+.service-list__item.about{
+    flex-direction: row;
+    column-gap: 20px;
+    align-items: flex-start;
+}
+
+.service-list__item-about{
+    display: flex;
+    flex-direction: column;
+}
+
+.service-title.about{
+    @include MINtablet{
+        // font-size: 24px;
+    }
+    @include tablet{
+        // font-size: 24px;
+    } @include desktop{
+        font-size: 4rem;
+    }
+}

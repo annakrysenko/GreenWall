@@ -8,12 +8,16 @@ if(formModalEl) formModalEl.addEventListener('submit', handleSubmitModal);
 
 async function handleSubmit(e) {
   e.preventDefault();
+  console.log( e.target.formEmailFooter.value,
+  e.target.formPhoneFooter.value,
+  e.target.formNameFooter.value,
+  e.target.inputServicesFooter.value)
   await sendData({
     "id": nanoid(),
     "email": e.target.formEmailFooter.value,
     "phone": e.target.formPhoneFooter.value,
     "name": e.target.formNameFooter.value,
-    "service": e.target.inputServices.value,
+    "service": e.target.inputServicesFooter.value,
   });
   formFooterEl.reset();
 }

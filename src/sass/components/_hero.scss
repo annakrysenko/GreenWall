@@ -4,7 +4,12 @@
     width: 100vw;
     height: 100vh;
     background-color: $background-color;
+    background: linear-gradient(rgba(166, 142, 112, 0.3),rgba(166, 144, 112, 0.3)), url('../images/Company.jpg');
+    background-size: cover;
+    background-position: center;
+    // background: linear-gradient(90deg, rgb(125, 125, 125) , rgba(255, 255, 255, 0) 60%), url('../images/team/Oleksandr4.jpg');
     // background-size: cover;
+    // backdrop-filter: blur(10px);
 }
 
 .hero-wrapper {
@@ -28,6 +33,9 @@
     flex-direction: column;
     row-gap: 20px;
     align-items: center;
+    backdrop-filter: blur(12px);
+    background-color: rgba(1, 39, 21, 0.736);
+    padding: 30px;
     // justify-content: center;
     // text-align: center;
 
@@ -45,7 +53,7 @@
     font-weight: 700;
     font-size: 2rem;
     max-width: 350px;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     @include tablet {
         font-size: 3rem;
@@ -61,7 +69,13 @@
 }
 .accent-text {
     color: $accent-text;
+    // color: rgb(2, 83, 36);
 }
+
+// .group{
+//     text-transform: uppercase;
+//     letter-spacing: 0.1em;
+// }
 
 .subtitle {
     font-family: "Roboto", sans-serif;
@@ -97,4 +111,9 @@
 .hero-right-side {
     width: 50%;
     background-color: #ffffff;
+}
+
+.hero-photo{
+    width: 100%;
+    object-fit: contain;
 }

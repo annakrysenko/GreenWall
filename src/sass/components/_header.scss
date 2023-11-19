@@ -10,9 +10,13 @@
     color: white;
     font-size: 0.8rem;
     background-color: $background-color;
- 
+    // background-color: #012302a1;
+     backdrop-filter: blur(10);
+    background-position-y: 100px;
     z-index: 100;
+    transition: all 0.3s ease-in-out;
 }
+
 .header-wrapper {
     display: flex;
     // justify-content: space-between;
@@ -36,19 +40,19 @@
 
 // burger
 .icon-menu {
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     fill: white;
     cursor: pointer;
     @include tablet {
-    display: none;
-
+        display: none;
     }
 }
 // logo
 .logo,
 .home-link {
     width: 60px;
+    height: 60px;
     margin-right: auto;
     @include MINtablet {
         margin: 0 auto;
@@ -56,7 +60,6 @@
     @include tablet {
         margin: 0;
         margin-right: auto;
- 
     }
     @include desktop {
         width: 100px;
@@ -65,47 +68,85 @@
     }
 }
 
+.logo {
+    width: 90px;
+    height: 60px;
+    // object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: "Outfit", sans-serif;
+}
+
+.logo-top {
+    height: 25px;
+    width: 30px;
+}
+
+.logo-bottom {
+    height: 3px;
+    width: 80px;
+}
+
+.logo-text-top,
+.logo-text-bottom {
+    text-transform: uppercase;
+}
+
+.logo-text-top {
+    margin-top: 4px;
+    font-size: 0.55rem;
+    letter-spacing: 0.03em;
+
+}
+.logo-text-bottom {
+    font-size: 1.1rem;
+    letter-spacing: 0.22em;
+}
 // navigation
 
-.nav-wrapper{
+.nav-wrapper {
     @include tablet {
-        margin-right: 50px;
+        margin-right: 30px;
     }
     @media screen and (min-width: 850px) {
         margin-right: auto;
-
+        // margin-left: 50px;
     }
     @include desktop {
-        margin-right: 340px;
+        // margin-right: 340px;
     }
-
 }
 
 .nav-list {
     display: none;
     @include tablet {
         display: flex;
-        column-gap: 8px;
+        // column-gap: 8px;
+        margin: 0 auto;
     }
     @include desktop {
         column-gap: 15px;
-
     }
-}
-
-.nav-list__item{
-
 }
 
 .nav-btn {
     padding: 4px 8px;
-
+    font-weight: 400;
     background: transparent;
     border: none;
     color: white;
-    transition: color 0.3s ease-in-out;
-}
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    @include tablet {
+        font-size: 0.7rem;
+    }
+    @include desktop {
+        font-size: 1.1rem;
 
+    }
+}
 
 // social
 .header-social-wrap {
@@ -113,12 +154,10 @@
     @include tablet {
         display: flex;
         margin-right: 20px;
-
     }
     @media screen and (min-width: 850px) {
         margin-right: 50px;
- 
-     }
+    }
     @include desktop {
         margin-right: 60px;
     }
@@ -135,6 +174,9 @@
     width: 15px;
     height: 15px;
     transition: fill 0.3s ease-in-out;
+    @include desktop {
+        width: 20px;
+        height: 20px;    }
 }
 
 // hovers
@@ -153,8 +195,14 @@
     background-color: $hover-btn-color;
 }
 
+._active {
+    background-color: $background-color-link;
+    // color: $hover-btn-color;
+}
+
 // button contact us
 .contact-us-btn {
+    cursor: pointer;
     display: none;
     @include MINtablet {
         display: flex;
@@ -166,3 +214,42 @@
     }
 }
 
+// .icon-cross{
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+// }
+
+// CHANGE
+.header.change {
+    background-color: white;
+    // background-color: #012302a1;
+
+    color: #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.header.change .nav-btn {
+    color: #000;
+}
+
+.header.change .icon-menu {
+    fill: #000;
+}
+
+.header.change .header-social-icon {
+    fill: rgb(132, 132, 132);
+}
+
+.header.change .header-social-icon:hover {
+    fill: $hover-btn-color;
+}
+
+.header.change .nav-btn:hover{
+    background-color: rgb(237, 237, 237);
+
+}
+
+.header.change .nav-btn._active {
+    background-color: rgb(237, 237, 237);
+}

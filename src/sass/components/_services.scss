@@ -1,11 +1,12 @@
 .services-wrap {
     // width: 100vw;
-    height: 100vh;
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
+    padding-bottom: 50px;
     @include tablet {
+        // height: 100vh;
         background-size: cover;
     }
     @include desktop {
@@ -34,8 +35,8 @@
         margin-top: 89px;
     }
     @include desktop {
-        margin-top: 109px;
-
+        margin-top: 40px;
+    
     }
 
 }
@@ -65,11 +66,11 @@
     @include MINtablet {
         column-gap: 20px;
         justify-content: space-between;
-        height: 80%;
+        height: 70%;
         row-gap: 20px;
     }
     @include desktop {
-        height: 70%;
+        // height: 50%;
 
     }
 
@@ -85,14 +86,16 @@
     display: flex;
     flex-direction: column;
     padding: 10px;
+
     @include MINtablet {
         column-gap: 20px;
         justify-content: space-between;
         width: calc(100% / 2 - 20px);
-        padding: 20px;
+        // padding: 15px;
     }
     @include desktop {
         width: calc(100% / 3 - 20px);
+
 }
   
 }
@@ -102,12 +105,12 @@
     font-size: 1rem;
 
     @include MINtablet {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     @include tablet {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
-    @include tablet {
+    @include desktop {
         font-size: 1.6rem;
     }
 }
@@ -118,14 +121,19 @@
     color: $secondary-text-color;
 
     @include MINtablet {
-        margin-top: 10px;
-        font-size: 0.8rem;
+        // margin-top: 5px;
+        font-size: 0.6rem;
 
     }
     @include tablet {
-        margin-top: 15px;
+        // margin-top: 5px;
+        font-size: 0.7rem;
+
+
     }
     @include desktop {
+        // margin-top: 10px;
+
         font-size: 0.9rem;
     }
 }
@@ -139,7 +147,7 @@
     margin-top: 10px;
     display: flex;
     column-gap: 5px;
-    align-items: end;
+    align-items: baseline;
     &:hover {
       color: $hover-btn-color;
     }
@@ -148,13 +156,18 @@
       }
 
     @include MINtablet {
-        margin-top: auto;
-        font-size: 0.9rem;
+        margin-top: 10px;
+        font-size: 0.7rem;
         column-gap: 10px;
 
     }
     @include tablet {
-        margin-top: auto;
+        margin-top: 20px;
+        font-size: 1rem;
+        
+    }
+    @include desktop {
+        margin-top: 30px;
         font-size: 1.1rem;
         
     }
@@ -167,8 +180,8 @@
     transition: fill  0.3s ease-in-out;
 
     @include MINtablet {
-        width: 15px;
-        height: 15px;
+        width: 10px;
+        height: 10px;
         
     }
     @include tablet {

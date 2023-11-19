@@ -1,32 +1,43 @@
-<header class="header" >
+<header class="header">
   <div class="header-wrapper">
     <!-- burger -->
     <div class="burger">
-      <svg class="icon-menu" width="60" height="60">
-        <use xlink:href="#icon-menu"></use>
+      <svg width="30" height="30">
+        <use xlink:href="#icon-menu" class="icon-menu"></use>
       </svg>
     </div>
 
     <!-- logo -->
-    <a href="./index.html" class="home-link"><img src="./images/logo.png" alt="" class="logo" /></a>
+    <a href="./index.html" class="logo">
+      <img src="./images/logo-top.png" alt="" class="logo-top" />
+      <p class="logo-text-top">The GreenWall</p>
+      <p class="logo-text-bottom">Group</p>
+      <img src="./images/logo-bottom.png" alt="" class="logo-bottom" />
+    </a>
 
     <div class="nav-wrapper">
       <nav class="nav">
         <ul class="nav-list">
           <li class="nav-list__item">
-            <a data-section="" class="nav-btn slide-link">Home</a>
+            <a data-section="HomeAnchor" class="nav-btn slide-link">Home</a>
           </li>
           <li class="nav-list__item">
-            <a data-section="" class="nav-btn slide-link">About Us</a>
+            <a data-section="AboutUsAnchor" class="nav-btn slide-link"
+              >About Us</a
+            >
           </li>
           <li class="nav-list__item">
-            <a data-section="" class="nav-btn slide-link">Services</a>
+            <a data-section="ServicesAnchor" class="nav-btn slide-link"
+              >Services</a
+            >
           </li>
           <li class="nav-list__item">
-            <a data-section="" class="nav-btn">Our Team</a>
+            <a data-section="TeamAnchor" class="nav-btn">Our Team</a>
           </li>
           <li class="nav-list__item">
-            <a data-section="" class="nav-btn slide-link">Contacts</a>
+            <a data-section="ContactsAnchor" class="nav-btn slide-link"
+              >Contacts</a
+            >
           </li>
         </ul>
       </nav>
@@ -34,34 +45,97 @@
 
     <div class="header-social-wrap">
       <ul class="header-social-list list">
-        <li class="header-social-item">
-          <a href="" class="header-social-link link">
-            <svg class="header-social-icon" width="10" height="10">
-              <use href="./images/icons.svg#icon-instagram-2"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="header-social-item">
-          <a href="" class="header-social-link link">
-            <svg class="header-social-icon" width="10" height="10">
-              <use href="./images/icons.svg#icon-twitter-1"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="header-social-item">
+
+        <!-- facebook -->
+        <!-- <li class="header-social-item">
           <a href="" class="header-social-link link">
             <svg class="header-social-icon" width="10" height="10">
               <use href="./images/icons.svg#icon-facebook-1"></use>
             </svg>
           </a>
-        </li>
+        </li> -->
+
+      
+
+        <!-- twitter -->
         <li class="header-social-item">
-          <a href="" class="header-social-link link">
+          <a
+            href="https://twitter.com/GreenWallGroup"
+            class="header-social-link link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg class="header-social-icon" width="10" height="10">
-              <use href="./images/icons.svg#icon-linkedin-1"></use>
+              <use href="./images/icons.svg#icon-twitter-1"></use>
             </svg>
           </a>
         </li>
+
+        <!-- viber -->
+        <li class="burger-header-social-item">
+          <a
+            href="viber://chat?number=%2B380954537293"
+            class="header-social-link link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="header-social-icon" width="10" height="10">
+              <use xlink:href="#icon-viber"></use>
+            </svg>
+          </a>
+        </li>
+
+        <!-- telegram -->
+        <li class="burger-header-social-item">
+          <a
+            href="https://t.me/Mr_attorneyIIR"
+            class="header-social-link link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="header-social-icon" width="10" height="10">
+              <use xlink:href="#icon-telegram"></use>
+            </svg>
+          </a>
+        </li>
+
+        <!-- whatsapp -->
+        <li class="burger-header-social-item">
+          <a href="https://wa.me/380954537293" class="header-social-link link"  target="_blank"
+          rel="noopener noreferrer">
+            <svg class="header-social-icon" width="10" height="10">
+              <use xlink:href="#icon-whatsapp"></use>
+            </svg>
+          </a>
+        </li>
+
+        <!-- instagram -->
+        <li class="header-social-item">
+          <a
+            href="https://www.instagram.com/greenwallgroup1.0/"
+            class="header-social-link link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="header-social-icon" width="10" height="10">
+              <use href="./images/icons.svg#icon-instagram-2"></use>
+            </svg>
+          </a>
+        </li>
+
+          <!-- linkedin -->
+          <li class="header-social-item">
+            <a
+              href="https://www.linkedin.com/company/the-greenwall-group/"
+              class="header-social-link link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="header-social-icon" width="10" height="10">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
       </ul>
     </div>
 
@@ -69,60 +143,138 @@
     <!---------------- MOBILE ------------------>
     <div class="burger-menu is-hidden">
       <div class="burger-nav-wrapper">
-        <svg class="icon icon-cross" id="close-burger" width="32" height="32">
-          <use xlink:href="#icon-cross"></use>
+        <svg class="icon icon-cross" width="32" height="32">
+          <use
+            xlink:href="#icon-cross"
+            class="close-burger"
+            id="closeBurger"
+          ></use>
         </svg>
+
         <nav class="burger-nav">
           <ul class="burger-nav-list">
-            <li class="burger-nav-list__item" data-section="0">
-              Home
+            <li class="burger-nav-list__item">
+              <a href="#" data-section="HomeAnchor" class="burger-link">
+                Home
+              </a>
             </li>
-            <li class="burger-nav-list__item" data-section="1">
-              About Us
+
+            <li class="burger-nav-list__item">
+              <a data-section="AboutUsAnchor" class="burger-link" href="#">
+                About Us
+              </a>
             </li>
-            <li class="burger-nav-list__item" data-section="2">
-              Services
+
+            <li class="burger-nav-list__item">
+              <a href="#" data-section="ServicesAnchor" class="burger-link">
+                Services
+              </a>
             </li>
-            <li class="burger-nav-list__item" data-section="">
-              Our Team
+
+            <li class="burger-nav-list__item">
+              <a href="#" data-section="TeamAnchor" class="burger-link"> Our Team </a>
             </li>
-            <li class="burger-nav-list__item" data-section="3">
-              Contacts
+
+            <li class="burger-nav-list__item">
+              <a href="#" data-section="ContactsAnchor" class="burger-link"
+                >Contacts
+              </a>
             </li>
           </ul>
         </nav>
+
         <ul class="burger-header-social-list list">
           <li class="burger-header-social-item">
-            <a href="https://www.instagram.com/greenwallgroup1.0/" class="burger-header-social-link link">
+            <a
+              href="https://www.instagram.com/greenwallgroup1.0/"
+              class="burger-header-social-link link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <svg class="burger-header-social-icon" width="10" height="10">
                 <use href="./images/icons.svg#icon-instagram-2"></use>
               </svg>
             </a>
           </li>
           <li class="burger-header-social-item">
-            <a href="https://twitter.com/GreenWallGroup" class="burger-header-social-link link">
+            <a
+              href="https://twitter.com/GreenWallGroup"
+              class="burger-header-social-link link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <svg class="burger-header-social-icon" width="10" height="10">
                 <use href="./images/icons.svg#icon-twitter-1"></use>
               </svg>
             </a>
           </li>
-          <li class="burger-header-social-item">
-            <a href="" class="burger-header-social-link link">
+          <!-- <li class="burger-header-social-item">
+            <a
+              href=""
+              class="burger-header-social-link link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <svg class="burger-header-social-icon" width="10" height="10">
                 <use href="./images/icons.svg#icon-facebook-1"></use>
               </svg>
             </a>
-          </li>
+          </li> -->
           <li class="burger-header-social-item">
-            <a href="https://www.linkedin.com/company/the-greenwall-group/" class="burger-header-social-link link">
+            <a
+              href="https://www.linkedin.com/company/the-greenwall-group/"
+              class="burger-header-social-link link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <svg class="burger-header-social-icon" width="10" height="10">
                 <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+          <!-- viber -->
+          <li class="burger-header-social-item">
+            <a
+              href="viber://chat?number=%2B380954537293"
+              class="burger-header-social-link link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="burger-header-social-icon" width="10" height="10">
+                <use xlink:href="#icon-viber"></use>
+              </svg>
+            </a>
+          </li>
+
+          <!-- telegram -->
+          <li class="burger-header-social-item">
+            <a
+              href="https://t.me/Mr_attorneyIIR"
+              class="burger-header-social-link link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="burger-header-social-icon" width="10" height="10">
+                <use xlink:href="#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <!-- whatsapp -->
+          <li class="burger-header-social-item">
+            <a
+              href="https://wa.me/380954537293"
+              class="burger-header-social-link link"
+            >
+              <svg class="burger-header-social-icon" width="10" height="10">
+                <use xlink:href="#icon-whatsapp"></use>
               </svg>
             </a>
           </li>
         </ul>
       </div>
     </div>
+
+    <!----------------------  -------------------->
   </div>
-  <!----------------------  -------------------->
 </header>
